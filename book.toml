@@ -1,0 +1,8 @@
+[book]
+authors = []
+language = "en"
+src = "src"
+title = "Machine Learning Crash Course"
+
+[output.html]
+mathjax-support = true
