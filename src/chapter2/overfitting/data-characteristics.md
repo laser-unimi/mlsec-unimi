@@ -1,30 +1,4 @@
-# Datasets: Data characteristics  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/overfitting/data-characteristics
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Datasets: Data characteristics Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* A machine learning model's performance is heavily reliant on the quality and quantity of the dataset it's trained on, with larger, high-quality datasets generally leading to better results.
-* Datasets can contain various data types, including numerical, categorical, text, multimedia, and embedding vectors, each requiring specific handling for optimal model training.
-* Maintaining data quality involves addressing issues like label errors, noisy features, and proper filtering to ensure the reliability of the dataset for accurate predictions.
-* Incomplete examples with missing feature values should be handled by either deletion or imputation to avoid negatively impacting model training.
-* When imputing missing values, use reliable methods like mean/median imputation and consider adding an indicator column to signal imputed values to the model.
+# Datasets: Data characteristics
 
 A [**dataset**](https://developers.google.com/machine-learning/glossary#dataset) is a collection of
 [**examples**](https://developers.google.com/machine-learning/glossary#example).
@@ -136,16 +110,14 @@ details how to handle numeric outliers.
 In a perfect world, each example is **complete**; that is, each example contains
 a value for each feature.
 
-![IMAGE: Figure 1. An example containing values for all five of its
-features.]()
+![IMAGE: Figure 1. An example containing values for all five of its features.](/static/chapter2/overfitting/data-characteristics/complete_example.svg)
 
 **Figure 1.** A complete example.
 
 Unfortunately, real-world examples are often **incomplete**, meaning that at
 least one feature value is missing.
 
-![IMAGE: Figure 2. An example containing values for four of its five
-features. One feature is marked missing.]()
+![IMAGE: Figure 2. An example containing values for four of its five features. One feature is marked missing.](/static/chapter2/overfitting/data-characteristics/incomplete_example.svg)
 
 **Figure 2.** An incomplete example.
 
@@ -157,16 +129,11 @@ incomplete examples by doing one of the following:
   that is, convert the incomplete example to a complete example by providing
   well-reasoned guesses for the missing values.
 
-![IMAGE: Figure 3. A dataset containing three examples, two of which are
-incomplete examples. Someone has stricken these two incomplete
-examples from the dataset.]()
+![IMAGE: Figure 3. A dataset containing three examples, two of which are incomplete examples. Someone has stricken these two incomplete examples from the dataset.](/static/chapter2/overfitting/data-characteristics/delete_incomplete_examples.svg)
 
 **Figure 3.** Deleting incomplete examples from the dataset.
 
-![IMAGE: Figure 4. A dataset containing three examples, two of which were
-incomplete examples containing missing data. Some entity (a human
-or imputation software) has imputed values that replaced the
-missing data.]()
+![IMAGE: Figure 4. A dataset containing three examples, two of which were incomplete examples containing missing data. Some entity (a human or imputation software) has imputed values that replaced the missing data.](/static/chapter2/overfitting/data-characteristics/impute_missing_values.svg)
 
 **Figure 4.** Imputing missing values for incomplete examples.
 
@@ -185,8 +152,6 @@ between useless and useful examples. If you can't decide whether
 to delete or impute, consider building two datasets: one formed by deleting
 incomplete examples and the other by imputing.
 Then, determine which dataset trains the better model.
-
-#### Click the icon to learn more about imputation handling.
 
 Clever algorithms can impute some pretty good missing values;
 however, imputed values are rarely as good as the actual values.
@@ -259,35 +224,3 @@ Very unlikely. 51 is much higher than any of the displayed values
 * [Model](https://developers.google.com/machine-learning/glossary#model)
 * [Value imputation](https://developers.google.com/machine-learning/glossary#value-imputation)
 * [Z-score normalization](https://developers.google.com/machine-learning/glossary#z-score-normalization)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Introduction (5 min)](/machine-learning/crash-course/overfitting)
-
-[Next
-
-Labels (10 min)
-
-arrow\_forward](/machine-learning/crash-course/overfitting/labels)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

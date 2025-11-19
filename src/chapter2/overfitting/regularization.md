@@ -1,29 +1,4 @@
-# Overfitting: L2 regularization  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/overfitting/regularization
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Overfitting: L2 regularization Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* L2 regularization is a technique used to reduce model complexity and prevent overfitting by penalizing large weights.
-* A regularization rate (lambda) controls the strength of regularization, with higher values leading to simpler models and lower values increasing the risk of overfitting.
-* Early stopping is an alternative regularization method that involves ending training before the model fully converges to prevent overfitting.
-* Finding the right balance between learning rate and regularization rate is crucial for optimal model performance, as they influence weights in opposite directions.
+# Overfitting: L2 regularization
 
 [**L2 regularization**](https://developers.google.com/machine-learning/glossary#l2-regularization)
 is a popular regularization metric, which uses the following formula:
@@ -123,8 +98,7 @@ A low regularization rate:
 For example, the histogram of model weights for a high regularization rate
 might look as shown in Figure 18.
 
-![IMAGE: Figure 18. Histogram of a model's weights with a mean of zero and
-a normal distribution.]()
+![IMAGE: Figure 18. Histogram of a model's weights with a mean of zero and a normal distribution.](/static/chapter2/overfitting/regularization/HighLambda.svg)
 
 **Figure 18.** Weight histogram for a high regularization rate.
 Mean is zero. Normal distribution.
@@ -132,9 +106,7 @@ Mean is zero. Normal distribution.
 In contrast, a low regularization rate tends to yield a flatter histogram, as
 shown in Figure 19.
 
-![IMAGE: Figure 19. Histogram of a model's weights with a mean of zero that
-is somewhere between a flat distribution and a normal
-distribution.]()
+![IMAGE: Figure 19. Histogram of a model's weights with a mean of zero that is somewhere between a flat distribution and a normal distribution.](/static/chapter2/overfitting/regularization/LowLambda.svg)
 
 **Figure 19.** Weight histogram for a low regularization rate.
 Mean may or may not be zero.
@@ -192,35 +164,3 @@ regularization rate.
 * [Learning rate](https://developers.google.com/machine-learning/glossary#learning-rate)
 * [Regularization](https://developers.google.com/machine-learning/glossary#regularization)
 * [Regularization rate](https://developers.google.com/machine-learning/glossary#regularization-rate)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Model complexity (10 min)](/machine-learning/crash-course/overfitting/model-complexity)
-
-[Next
-
-Interpreting loss curves (10 min)
-
-arrow\_forward](/machine-learning/crash-course/overfitting/interpreting-loss-curves)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

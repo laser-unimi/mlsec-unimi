@@ -1,30 +1,4 @@
-# Datasets: Dividing the original dataset  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/overfitting/dividing-datasets
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Datasets: Dividing the original dataset Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Machine learning models should be tested against a separate dataset, called the test set, to ensure accurate predictions on unseen data.
-* It's recommended to split the dataset into three subsets: training, validation, and test sets, with the validation set used for initial testing during training and the test set used for final evaluation.
-* The validation and test sets can "wear out" with repeated use, requiring fresh data to maintain reliable evaluation results.
-* A good test set is statistically significant, representative of the dataset and real-world data, and contains no duplicates from the training set.
-* It's crucial to address discrepancies between the dataset used for training and testing and the real-world data the model will encounter to achieve satisfactory real-world performance.
+# Datasets: Dividing the original dataset
 
 All good software engineering projects devote considerable energy to
 *testing* their apps. Similarly, we strongly recommend testing your
@@ -46,8 +20,7 @@ assume, therefore, that you should split the original dataset into two subsets:
 * A [**test set**](https://developers.google.com/machine-learning/glossary#test-set) for evaluation of the
   trained model.
 
-![IMAGE: Figure 8. A horizontal bar divided into two pieces: ~80% of which
-is the training set and ~20% is the test set.]()
+![IMAGE: Figure 8. A horizontal bar divided into two pieces: ~80% of which is the training set and ~20% is the test set.](/static/chapter2/overfitting/dividing-datasets/PartitionTwoSets.png)
 
 **Figure 8.** Not an optimal split.
 
@@ -89,9 +62,7 @@ In addition to the training set and the test set, the third subset is:
 * A [**validation set**](https://developers.google.com/machine-learning/glossary#validation-set)
   performs the initial testing on the model as it is being trained.
 
-![IMAGE: Figure 9. A horizontal bar divided into three pieces: 70% of which
-is the training set, 15% the validation set, and 15%
-the test set]()
+![IMAGE: Figure 9. A horizontal bar divided into three pieces: 70% of which is the training set, 15% the validation set, and 15% the test set](/static/chapter2/overfitting/dividing-datasets/PartitionThreeSets.png)
 
 **Figure 9.** A much better split.
 
@@ -104,13 +75,7 @@ In the figure, "Tweak model" means adjusting anything about the model
 —from changing the learning rate, to adding or removing
 features, to designing a completely new model from scratch.
 
-![IMAGE: Figure 10. A workflow diagram consisting of the following stages:
-1. Train model on the training set.
-2. Evaluate model on the validation set.
-3. Tweak model according to results on the validation set.
-4. Iterate on 1, 2, and 3, ultimately picking the model that does
-best on the validation set.
-5. Confirm the results on the test set.]()
+![IMAGE: Figure 10. A workflow diagram](/static/chapter2/overfitting/dividing-datasets/workflow_with_validation_set.svg)
 
 **Figure 10.** A good workflow for development and testing.
 
@@ -240,35 +205,3 @@ At least 15% of the original dataset.
 * [Test set](https://developers.google.com/machine-learning/glossary#test-set)
 * [Training set](https://developers.google.com/machine-learning/glossary#training-set)
 * [Validation set](https://developers.google.com/machine-learning/glossary#validation_set)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Imbalanced datasets (10 min)](/machine-learning/crash-course/overfitting/imbalanced-datasets)
-
-[Next
-
-Transforming data (5 min)
-
-arrow\_forward](/machine-learning/crash-course/overfitting/transforming-data)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

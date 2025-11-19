@@ -1,31 +1,4 @@
-# Numerical data: Binning  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/numerical-data/binning
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Numerical data: Binning Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Binning is a feature engineering technique used to group numerical data into categories (bins) to improve model performance when a linear relationship is weak or data is clustered.
-* Binning can be beneficial when features exhibit a "clumpy" distribution rather than a linear one, allowing the model to learn separate weights for each bin.
-* While creating multiple bins is possible, it's generally recommended to avoid an excessive number as it can lead to insufficient training examples per bin and increased feature dimensionality.
-* Quantile bucketing is a specific binning technique that ensures each bin contains a roughly equal number of examples, which can be particularly useful for datasets with skewed distributions.
-* Binning offers an alternative to scaling or clipping and is particularly useful for handling outliers and improving model performance on non-linear data.
-
+# Numerical data: Binning
 **Binning** (also called **bucketing**) is a
 [**feature engineering**](https://developers.google.com/machine-learning/glossary#feature_engineering)
 technique that groups different numerical subranges into *bins* or
@@ -80,8 +53,7 @@ Suppose you are creating a model that predicts the number of
 shoppers by the outside temperature for that day. Here's a plot of the
 temperature versus the number of shoppers:
 
-![IMAGE: Figure 9. A scatter plot of 45 points. The 45 points naturally
-cluster into three groups. ]()
+![IMAGE: Figure 9. A scatter plot of 45 points. The 45 points naturally cluster into three groups. ](/static/chapter2/numerical/binning/binning_temperature_vs_shoppers.png)
 
 **Figure 9.** A scatter plot of 45 points.
 
@@ -104,8 +76,7 @@ The graph suggests three clusters in the following subranges:
 * Bin 2 is the temperature range 12-26.
 * Bin 3 is the temperature range 27-36.
 
-![IMAGE: Figure 10. The same scatter plot of 45 points as in the previous
-figure, but with vertical lines to make the bins more obvious.]()
+![IMAGE: Figure 10. The same scatter plot of 45 points as in the previous figure, but with vertical lines to make the bins more obvious.](/static/chapter2/numerical/binning/binning_temperature_vs_shoppers_divided_into_3_bins.png)
 
 **Figure 10.** The scatter plot divided into three bins.
 
@@ -128,12 +99,7 @@ each temperature reading, this is often a bad idea for the following reasons:
 The following plot shows the median home price for each 0.2 degrees of
 latitude for the mythical country of Freedonia:
 
-![IMAGE: Figure 11. A plot of home values per latitude. The lowest house
-value is about 327 and the highest is 712. The latitudes span 41.0
-to 44.8, with a dot representing the median house value for every
-0.2 degrees of latitude. The pattern is highly irregular, but with
-two distinct clusters (one cluster between latitude 41.0 and 41.8,
-and another cluster between latitude 42.6 and 43.4).]()
+![IMAGE: Figure 11. A plot of home values per latitude. The lowest house value is about 327 and the highest is 712. The latitudes span 41.0 to 44.8, with a dot representing the median house value for every 0.2 degrees of latitude. The pattern is highly irregular, but with two distinct clusters (one cluster between latitude 41.0 and 41.8, and another cluster between latitude 42.6 and 43.4).](/static/chapter2/numerical/binning/MedianHouseValueByLatitude.png)
 
 **Figure 11.** Median home value per 0.2 degrees latitude.
 
@@ -181,16 +147,7 @@ but the bucket from 50,000 to 60,000 contains only 5 examples.
 Consequently, the model has enough examples to train on the 0 to 10,000
 bucket but not enough examples to train on for the 50,000 to 60,000 bucket.
 
-![IMAGE: Figure 13. A plot of car price versus the number of cars sold at
-that price. The number of cars sold peaks at a price of 6,000.
-Above a price of 6,000, the number of cars sold generally
-decreases, with very few cars sold between a price of 40,000 to
-60,000. The plot is divided into 6 equally-sized buckets, each with
-a range of 10,000. So, the first bucket contains all the cars sold
-between a price of 0 and a price of 10,000, the second
-bucket contains all the cars sold between a price of 10,001 and
-20,000, and so on. The first bucket contain many examples; each
-subsequent bucket contains fewer examples.]()
+![IMAGE: Figure 13. A plot of car price versus the number of cars sold at that price. The number of cars sold peaks at a price of 6,000. Above a price of 6,000, the number of cars sold generally decreases, with very few cars sold between a price of 40,000 to 60,000. The plot is divided into 6 equally-sized buckets, each with a range of 10,000. So, the first bucket contains all the cars sold between a price of 0 and a price of 10,000, the second bucket contains all the cars sold between a price of 10,001 and 20,000, and so on. The first bucket contain many examples; each subsequent bucket contains fewer examples.](/static/chapter2/numerical/binning/NeedsQuantileBucketing.png)
 
 **Figure 13.** Some buckets contain a lot of cars; other buckets contain
 very few cars.
@@ -200,12 +157,7 @@ into bins with approximately the same number of examples in each bucket.
 Notice that some of the bins encompass a narrow price span while others
 encompass a very wide price span.
 
-![IMAGE: Figure 14. Same as previous figure, except with quantile buckets.
-That is, the buckets now have different sizes. The first bucket
-contains the cars sold from 0 to 4,000, the second bucket contains
-the cars sold from 4,001 to 6,000. The sixth bucket contains the
-cars sold from 25,001 to 60,000. The number of cars in each bucket
-is now about the same.]()
+![IMAGE: Figure 14. Same as previous figure, except with quantile buckets. That is, the buckets now have different sizes. The first bucket contains the cars sold from 0 to 4,000, the second bucket contains the cars sold from 4,001 to 6,000. The sixth bucket contains the cars sold from 25,001 to 60,000. The number of cars in each bucket is now about the same.](/static/chapter2/numerical/binning/QuantileBucketing.png)
 
 **Figure 14.** Quantile bucketing gives each bucket about the same
 number of cars.
@@ -226,35 +178,3 @@ large torso while compacting the long tail into a single bucket.
 * [Feature vector](https://developers.google.com/machine-learning/glossary#feature_vector)
 * [Label](https://developers.google.com/machine-learning/glossary#label)
 * [Scaling](https://developers.google.com/machine-learning/glossary#scaling)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Normalization (20 min)](/machine-learning/crash-course/numerical-data/normalization)
-
-[Next
-
-Scrubbing (5 min)
-
-arrow\_forward](/machine-learning/crash-course/numerical-data/scrubbing)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

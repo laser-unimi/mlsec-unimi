@@ -1,30 +1,4 @@
-# Numerical data: Scrubbing  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/numerical-data/scrubbing
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Numerical data: Scrubbing Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Like sorting good apples from bad, ML engineers spend significant time cleaning data by removing or fixing bad examples to improve dataset quality.
-* Common data problems include omitted values, duplicate examples, out-of-range values, and incorrect labels, which can negatively impact model performance.
-* You can use programs or scripts to identify and handle data issues such as omitted values, duplicates, and out-of-range feature values by removing or correcting them.
-* When multiple individuals label data, it's important to check for consistency and identify potential biases to ensure label quality.
-* Addressing data quality issues before training a model leads to better model accuracy and overall performance.
+# Numerical data: Scrubbing
 
 Apple trees produce a mixture of great fruit and wormy messes.
 Yet the apples in high-end grocery stores display 100% perfect fruit.
@@ -52,8 +26,7 @@ You can write a program or script to detect any of the following problems:
 
 For example, the following dataset contains six repeated values:
 
-![IMAGE: Figure 15. The first six values are repeated. The final eight
-values are not.]()
+![IMAGE: Figure 15. The first six values are repeated. The final eight values are not.](/static/chapter2/numerical/scrubbing/ScrubDuplicateValues.png)
 
 **Figure 15.** The first six values are repeated.
 
@@ -63,7 +36,7 @@ thermometer is temporarily exposed to the sun which causes a bad outlier.
 Your program or script must identify temperature values less than 10 or greater
 than 30:
 
-![IMAGE: Figure 16. Nineteen in-range values and one out-of-range value.]()
+![IMAGE: Figure 16. Nineteen in-range values and one out-of-range value.](/static/chapter2/numerical/scrubbing/ScrubOutofRangeValues.png)
 
 **Figure 16.** An out-of-range value.
 
@@ -79,35 +52,3 @@ For details, see the
 section of the
 [Datasets, generalization, and overfitting](/machine-learning/crash-course/overfitting)
 module.
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Binning (15 min)](/machine-learning/crash-course/numerical-data/binning)
-
-[Next
-
-Qualities of good numerical features (5 min)
-
-arrow\_forward](/machine-learning/crash-course/numerical-data/qualities-of-good-numerical-features)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

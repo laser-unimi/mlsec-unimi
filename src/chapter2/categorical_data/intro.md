@@ -1,45 +1,4 @@
-# Working with categorical data  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/categorical-data
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Working with categorical data Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* This module focuses on differentiating between categorical and numerical data within machine learning.
-* You will learn how to represent categorical data using one-hot vectors and address common issues associated with it.
-* The module covers encoding techniques for converting categorical data into numerical vectors suitable for model training.
-* Feature crosses, a method for combining categorical features to capture interactions, are also discussed.
-* It is assumed you have prior knowledge of introductory machine learning and working with numerical data.
-
-**Estimated module length:** 50 minutes
-**Learning objectives**
-
-* Distinguish categorical data from numerical data.
-* Represent categorical data with one-hot vectors.
-* Address common issues with categorical data.
-* Create feature crosses.
-**Prerequisites:**
-
-This module assumes you are familiar with the concepts covered in the
-following modules:
-
-* [Introduction to Machine Learning](/machine-learning/intro-to-ml)
-* [Working with numerical data](/machine-learning/crash-course/numerical-data)
+# Working with categorical data
 
 [**Categorical data**](https://developers.google.com/machine-learning/glossary#categorical-data) has a
 *specific set* of possible values. For example:
@@ -85,33 +44,3 @@ encoding methods for categorical data.
 * [Numerical data](https://developers.google.com/machine-learning/glossary#numerical-data)
 
 [Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Conclusion (2 min)](/machine-learning/crash-course/numerical-data/conclusion)
-
-[Next
-
-Vocabulary and one-hot encoding (10 min)
-
-arrow\_forward](/machine-learning/crash-course/categorical-data/one-hot-encoding)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

@@ -1,29 +1,4 @@
-# Categorical data: Common issues  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/categorical-data/issues
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Categorical data: Common issues Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Categorical data quality hinges on how categories are defined and labeled, impacting data reliability.
-* Human-labeled data, known as "gold labels," is generally preferred for training due to its higher quality, but it's essential to check for human errors and biases.
-* Machine-labeled data, or "silver labels," can introduce biases or inaccuracies, necessitating careful quality checks and awareness of potential common-sense violations.
-* High-dimensionality in categorical data increases training complexity and costs, leading to techniques like embeddings for dimensionality reduction.
+# Categorical data: Common issues
 
 Numerical data is often recorded by scientific instruments or
 automated measurements. Categorical data, on the other hand, is often
@@ -96,35 +71,3 @@ this course.
 **Key terms:**
 
 * [Inter-rater agreement](https://developers.google.com/machine-learning/glossary#inter-rater-agreement)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Vocabulary and one-hot encoding (10 min)](/machine-learning/crash-course/categorical-data/one-hot-encoding)
-
-[Next
-
-Feature crosses (5 min)
-
-arrow\_forward](/machine-learning/crash-course/categorical-data/feature-crosses)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

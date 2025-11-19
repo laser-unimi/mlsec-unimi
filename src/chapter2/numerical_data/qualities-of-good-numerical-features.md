@@ -1,30 +1,4 @@
-# Numerical data: Qualities of good numerical features  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/numerical-data/qualities-of-good-numerical-features
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Numerical data: Qualities of good numerical features Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Good feature vectors require features that are clearly named and have obvious meanings to anyone on the project.
-* Data should be checked and tested for bad data or outliers like inappropriate values before being used for training.
-* Features should be sensible, avoiding "magic values" that create discontinuities; instead, use separate boolean features or new discrete values to indicate missing data.
-* Continuous features should not have magic values representing the absence of measurement, but rather use separate Boolean features or discrete values.
-* Discrete numerical features with missing values should be assigned a new value within the finite set, enabling the model to learn weights for each value including missing features.
+# Numerical data: Qualities of good numerical features
 
 This unit has explored ways to map raw data into suitable
 [**feature vectors**](https://developers.google.com/machine-learning/glossary#feature_vector).
@@ -116,35 +90,3 @@ For example, we can imagine possible values fitting in the set:
 * [Outliers](https://developers.google.com/machine-learning/glossary#outliers)
 * [Feature](https://developers.google.com/machine-learning/glossary#feature)
 * [Feature vector](https://developers.google.com/machine-learning/glossary#feature_vector)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Scrubbing (5 min)](/machine-learning/crash-course/numerical-data/scrubbing)
-
-[Next
-
-Polynomial transforms (5 min)
-
-arrow\_forward](/machine-learning/crash-course/numerical-data/polynomial-transforms)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

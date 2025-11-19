@@ -1,29 +1,4 @@
-# Categorical data: Feature crosses  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/categorical-data/feature-crosses
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Categorical data: Feature crosses Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Feature crosses are created by combining two or more categorical or bucketed features to capture interactions and nonlinearities within a dataset.
-* They enable linear models to handle nonlinearities similar to polynomial transforms, but feature crosses work with categorical data while polynomial transforms are applied to numerical data.
-* Feature crosses can be particularly effective when guided by domain expertise, but using neural networks can automate the process of discovering valuable combinations.
-* Overuse of feature crosses with sparse features should be avoided, as it can lead to excessive sparsity in the resulting feature set.
+# Categorical data: Feature crosses
 
 [**Feature crosses**](https://developers.google.com/machine-learning/glossary#feature-cross) are created by
 crossing (taking the Cartesian product of) two or more categorical or bucketed
@@ -92,35 +67,3 @@ a feature cross of A and B yields a 20,000-element sparse feature.
 
 * [Feature cross](https://developers.google.com/machine-learning/glossary#feature-cross)
 * [Neural network](https://developers.google.com/machine-learning/glossary#neural_network)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Common issues with categorical data (5 min)](/machine-learning/crash-course/categorical-data/issues)
-
-[Next
-
-Feature cross exercises (15 min)
-
-arrow\_forward](/machine-learning/crash-course/categorical-data/feature-cross-exercises)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

@@ -8,7 +8,7 @@ columns (`b` and `d`) are features in the model. When processing
 the example in row 3, does the model simply grab the contents of the
 highlighted two cells (3b and 3d) as follows?
 
-![IMAGE: Figure 1. A model ingesting an example directly from a dataset. Columns b and d of Row 3 are highlighted.]()
+![IMAGE: Figure 1. A model ingesting an example directly from a dataset. Columns b and d of Row 3 are highlighted.](/static/chapter2/numerical/feature-vectors/dataset_directly_to_model.svg)
 
 **Figure 1.** Not exactly how a model gets its examples.
 
@@ -16,7 +16,7 @@ In fact, the model actually ingests an array of floating-point values called a
 [**feature vector**](https://developers.google.com/machine-learning/glossary#feature-vector). You can think
 of a feature vector as the floating-point values comprising one example.
 
-![IMAGE: Figure 2. The feature vector is an intermediary between the dataset and the model.]()
+![IMAGE: Figure 2. The feature vector is an intermediary between the dataset and the model.](/static/chapter2/numerical/feature-vectors/dataset_to_feature_vector_to_model.svg)
 
 **Figure 2.** Closer to the truth, but not realistic.
 
@@ -25,7 +25,7 @@ Instead, you must typically process the dataset's values into representations
 that your model can better learn from. So, a more realistic
 feature vector might look something like this:
 
-![IMAGE: Figure 3. The feature vector contains two floating-point values: 0.13 and 0.47. A more realistic feature vector.]()
+![IMAGE: Figure 3. The feature vector contains two floating-point values: 0.13 and 0.47. A more realistic feature vector.](/static/chapter2/numerical/feature-vectors/dataset_to_feature_vector_to_model_scaled.svg)
 
 **Figure 3.** A more realistic feature vector.
 

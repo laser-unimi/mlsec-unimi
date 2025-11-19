@@ -1,41 +1,10 @@
-# Overfitting: Interpreting loss curves  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/overfitting/interpreting-loss-curves
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Overfitting: Interpreting loss curves Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* This document helps you understand and interpret Machine Learning loss curves through a series of exercises and visual examples.
-* You will learn how to identify common issues like oscillating loss, exploding loss, overfitting, and erratic behavior in your models.
-* Solutions are provided for each exercise, along with explanations for various loss curve patterns.
-* Techniques to address these issues are discussed, including adjusting learning rate, cleaning training data, and applying regularization.
-* A glossary of key Machine Learning terminology related to loss curves and model training is included for quick reference.
+# Overfitting: Interpreting loss curves
 
 Machine learning would be much simpler if all your
 [**loss curves**](https://developers.google.com/machine-learning/glossary#loss_curve)
 looked like this the first time you trained your model:
 
-![IMAGE: Figure 20. A plot showing the ideal loss curve when training a
-machine learning model. The loss curve plots loss on the y-axis
-against the number of training steps on the x-axis. As the number
-of training steps increases, loss begins high, then decreases
-exponentially, and ultimately flattens out to reach a minimum
-loss.]()
+![IMAGE: Figure 20. A plot showing the ideal loss curve when training a machine learning model.](/static/chapter2/overfitting/loss-curves/metric-curve-ideal.svg)
 
 **Figure 20.** An ideal loss curve.
 
@@ -44,9 +13,7 @@ intuition about loss curves to solve the exercises on this page.
 
 ## Exercise 1: Oscillating loss curve
 
-![IMAGE: Figure 21. A loss curve (loss on the y-axis; number of training
-steps on the x-axis) in which the loss doesn't flatten out.
-Instead, loss oscillates erratically.]()
+![IMAGE: Figure 21. A loss curve (loss on the y-axis; number of training steps on the x-axis) in which the loss doesn't flatten out. Instead, loss oscillates erratically.](/static/chapter2/overfitting/loss-curves/metric-curve-ex03.svg)
 
 **Figure 21.** Oscillating loss curve.
 
@@ -83,9 +50,7 @@ learning curve indicates a problem.
 
 ## Exercise 2. Loss curve with a sharp jump
 
-![IMAGE: Figure 22. A loss curve plot that shows the loss decreasing up to a
-certain number of training steps and then suddenly increasing
-with further training steps.]()
+![IMAGE: Figure 22. A loss curve plot that shows the loss decreasing up to a certain number of training steps and then suddenly increasing with further training steps.](/static/chapter2/overfitting/loss-curves/metric-curve-ex02.svg)
 
 **Figure 22.** Sharp rise in loss.
 
@@ -115,9 +80,7 @@ shown in Figure 22.
 
 ## Exercise 3. Test loss diverges from training loss
 
-![IMAGE: Figure 23. The training loss curve appears to converge, but the
-validation loss begins to rise after a certain number of training
-steps.]()
+![IMAGE: Figure 23. The training loss curve appears to converge, but the validation loss begins to rise after a certain number of training steps.](/static/chapter2/overfitting/loss-curves/metric-curve-ex01.svg)
 
 **Figure 23.** Sharp rise in validation loss.
 
@@ -142,9 +105,7 @@ would likely not have behaved as it did.
 
 ## Exercise 4. Loss curve gets stuck
 
-![IMAGE: Figure 24. A plot of a loss curve showing the loss beginning to
-converge with training but then displaying repeated patterns that
-look like a rectangular wave.]()
+![IMAGE: Figure 24. A plot of a loss curve showing the loss beginning to converge with training but then displaying repeated patterns that look like a rectangular wave.](/static/chapter2/overfitting/loss-curves/metric-curve-ex05.svg)
 
 **Figure 24.** Chaotic loss after a certain number of steps.
 
@@ -180,35 +141,3 @@ This is unlikely to be the cause.
 * [Test set](https://developers.google.com/machine-learning/glossary#test-set)
 * [Training set](https://developers.google.com/machine-learning/glossary#training-set)
 * [Validation set](https://developers.google.com/machine-learning/glossary#validation_set)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-L2 regularization (10 min)](/machine-learning/crash-course/overfitting/regularization)
-
-[Next
-
-Test your knowledge (10 min)
-
-arrow\_forward](/machine-learning/crash-course/overfitting/test-your-knowledge)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

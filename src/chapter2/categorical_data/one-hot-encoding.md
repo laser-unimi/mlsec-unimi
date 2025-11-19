@@ -1,30 +1,4 @@
-# Categorical data: Vocabulary and one-hot encoding  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/categorical-data/one-hot-encoding
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Categorical data: Vocabulary and one-hot encoding Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* Dimension refers to the number of elements in a feature vector, and some categorical features have low dimensionality.
-* Machine learning models require numerical input; therefore, categorical data like strings must be converted to numerical representations.
-* One-hot encoding transforms categorical values into numerical vectors where each category is represented by a unique element with a value of 1.
-* For high-dimensional categorical features with numerous categories, one-hot encoding might be inefficient, and embeddings or hashing are recommended.
-* Sparse representation efficiently stores one-hot encoded data by only recording the position of the '1' value to reduce memory usage.
+# Categorical data: Vocabulary and one-hot encoding
 
 The term **dimension** is a synonym for the number of elements in a
 [**feature vector**](https://developers.google.com/machine-learning/glossary#feature_vector).
@@ -51,10 +25,7 @@ a low-dimensional categorical feature.
 The following illustration suggests a vocabulary (possible values) for
 `car_color`:
 
-![IMAGE: Figure 1. Each color in the palette is represented as a separate
-feature. That is, each color is a separate feature in the feature vector.
-For instance, 'Red' is a feature, 'Orange' is a separate feature,
-and so on.]()
+![IMAGE: Figure 1. Each color in the palette is represented as a separate feature. That is, each color is a separate feature in the feature vector. For instance, 'Red' is a feature, 'Orange' is a separate feature, and so on.](/static/chapter2/categorical/vocabulary/categorical-netview.svg)
 
 **Figure 1.** A unique feature for each category.
 
@@ -82,9 +53,7 @@ Machine learning models can only manipulate floating-point numbers.
 Therefore, you must convert each string to a unique index number, as in
 the following illustration:
 
-![IMAGE: Figure 2. Each color is associated with a unique integer value. For
-example, 'Red' is associated with the integer 0, 'Orange' with the
-integer 1, and so on.]()
+![IMAGE: Figure 2. Each color is associated with a unique integer value. For example, 'Red' is associated with the integer 0, 'Orange' with the integer 1, and so on.](/static/chapter2/categorical/vocabulary/categorical-netview-indexed.svg)
 
 **Figure 2.** Indexed features.
 
@@ -132,14 +101,7 @@ can be 1.0.
 The following illustration suggests the various transformations in the
 vocabulary representation:
 
-![IMAGE: Figure 3. Diagram of the end-to-end process to map categories to
-feature vectors. In the diagram, the input features are 'Yellow',
-'Orange', 'Blue', and 'Blue' a second time. The system uses a stored
-vocabulary ('Red' is 0, 'Orange' is 1, 'Blue' is 2, 'Yellow' is 3, and
-so on) to map the input value to an ID. Thus, the system maps 'Yellow',
-'Orange', 'Blue', and 'Blue' to 3, 1, 2, 2. The system then converts
-those values to a one-hot feature vector. For example, given a system
-with eight possible colors, 3 becomes 0, 0, 0, 1, 0, 0, 0, 0.]()
+![IMAGE: Figure 3. Diagram of the end-to-end process to map categories to feature vectors. In the diagram, the input features are 'Yellow', 'Orange', 'Blue', and 'Blue' a second time. The system uses a stored vocabulary ('Red' is 0, 'Orange' is 1, 'Blue' is 2, 'Yellow' is 3, and so on) to map the input value to an ID. Thus, the system maps 'Yellow', 'Orange', 'Blue', and 'Blue' to 3, 1, 2, 2. The system then converts those values to a one-hot feature vector. For example, given a system with eight possible colors, 3 becomes 0, 0, 0, 1, 0, 0, 0, 0.](/static/chapter2/categorical/vocabulary/vocabulary-index-sparse-feature.svg)
 
 **Figure 3.** The end-to-end process to map categories to feature vectors.
 
@@ -238,35 +200,3 @@ module.
 * [One-hot encoding](https://developers.google.com/machine-learning/glossary#one-hot_encoding)
 * [Sparse feature](https://developers.google.com/machine-learning/glossary#sparse-feature)
 * [Sparse representation](https://developers.google.com/machine-learning/glossary#sparse-representation)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Introduction (5 min)](/machine-learning/crash-course/categorical-data)
-
-[Next
-
-Common issues with categorical data (5 min)
-
-arrow\_forward](/machine-learning/crash-course/categorical-data/issues)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-08-25 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-08-25 UTC."],[],[]]

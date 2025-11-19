@@ -1,30 +1,4 @@
-# Datasets: Labels  |  Machine Learning  |  Google for Developers
-
-Source: https://developers.google.com/machine-learning/crash-course/overfitting/labels
-
-* [Home](https://developers.google.com/)
-* [Products](https://developers.google.com/products)
-* [Machine Learning](https://developers.google.com/machine-learning)
-* [ML Concepts](https://developers.google.com/machine-learning/crash-course)
-* [Crash Course](https://developers.google.com/machine-learning/crash-course/prereqs-and-prework)
-
-Send feedback
-
-# Datasets: Labels Stay organized with collections Save and categorize content based on your preferences.
-
-
-
-![IMAGE: Spark icon]()
-
-## AI-generated Key Takeaways
-
-outlined\_flag
-
-* This document explains the differences between direct and proxy labels for machine learning models, highlighting that direct labels are preferred but often unavailable.
-* It emphasizes the importance of carefully evaluating proxy labels to ensure they are a suitable approximation of the target prediction.
-* Human-generated data, while offering flexibility and nuanced understanding, can be expensive and prone to errors, requiring careful quality control.
-* Machine learning models can utilize a combination of automated and human-generated labels, but the added complexity of maintaining human-generated labels often outweighs the benefits.
-* Regardless of the label source, manual data inspection and comparison with human ratings are crucial for identifying potential issues and ensuring data quality.
+# Datasets: Labels
 
 This section focuses on [**labels**](https://developers.google.com/machine-learning/glossary#label).
 
@@ -153,35 +127,3 @@ information not available in the automated labels.
 
 * [Label](https://developers.google.com/machine-learning/glossary#label)
 * [Feature vector](https://developers.google.com/machine-learning/glossary#feature-vector)
-
-[Help Center](https://support.google.com/machinelearningeducation)
-
-[Previous
-
-arrow\_back
-
-Data characteristics (10 min)](/machine-learning/crash-course/overfitting/data-characteristics)
-
-[Next
-
-Imbalanced datasets (10 min)
-
-arrow\_forward](/machine-learning/crash-course/overfitting/imbalanced-datasets)
-
-
-
-
-
-
-Send feedback
-
-Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2025-09-17 UTC.
-
-
-
-
-Need to tell us more?
-
-[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2025-09-17 UTC."],[],[]]

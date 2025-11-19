@@ -169,7 +169,7 @@ histograms:
 * On the left, a classic normal distribution.
 * On the right, the same distribution normalized by Z-score scaling.
 
-![IMAGE: Figure 4. Two histograms: both showing normal distributions with the identical distribution. The first histogram, which contains raw data, has a mean of 200 and a standard deviation of 30. The second histogram, which contains a Z-score version of the first distribution, has a mean of 0 and a standard deviation of 1.]()
+![IMAGE: Figure 4. Two histograms: both showing normal distributions with the identical distribution. The first histogram, which contains raw data, has a mean of 200 and a standard deviation of 30. The second histogram, which contains a Z-score version of the first distribution, has a mean of 0 and a standard deviation of 1.](/static/chapter2/numerical/normalization/z-scaling_classic.png)
 
 **Figure 4.** Raw data (left) versus Z-score (right) for a normal
 distribution.
@@ -177,7 +177,7 @@ distribution.
 Z-score scaling is also a good choice for data like that shown in
 the following figure, which has only a vaguely normal distribution.
 
-![IMAGE: Figure 5. Two histograms of identical shape, each showing a steep rise to a plateau and then a relatively quick descent followed by gradual decay. One histogram illustrates the distribution of the raw data; the other histogram illustrates the distribution of the raw data when normalized by Z-score scaling. The values on the X-axis of the two histograms are very different. The raw data histogram spans the domain 0 to 29,000, while the Z-score scaled histogram ranges from -1 to about +4.8]()
+![IMAGE: Figure 5. Two histograms of identical shape, each showing a steep rise to a plateau and then a relatively quick descent followed by gradual decay. One histogram illustrates the distribution of the raw data; the other histogram illustrates the distribution of the raw data when normalized by Z-score scaling. The values on the X-axis of the two histograms are very different. The raw data histogram spans the domain 0 to 29,000, while the Z-score scaled histogram ranges from -1 to about +4.8](/static/chapter2/numerical/normalization/z-scaling-non-classic-normal-distribution.png)
 
 **Figure 5.** Raw data (left) versus Z-score scaling (right) for a
 non-classic normal distribution.
@@ -297,7 +297,7 @@ figure, notice:
 Log scaling changes the distribution, which helps train a model that will
 make better predictions.
 
-![IMAGE: Figure 6. Two graphs comparing raw data versus the log of raw data. The raw data graph shows a lot of user ratings in the head, followed by a long tail. The log graph has a more even distribution.]()
+![IMAGE: Figure 6. Two graphs comparing raw data versus the log of raw data. The raw data graph shows a lot of user ratings in the head, followed by a long tail. The log graph has a more even distribution.](/static/chapter2/numerical/normalization/norm-log-scaling-movie-ratings.svg)
 
 **Figure 6.** Comparing a raw distribution to its log.
 
@@ -342,7 +342,7 @@ by number of occupants) for various houses. The following plot shows that over
 1.8 and a standard deviation of 0.7). However, the feature contains
 a few outliers, some of them extreme:
 
-![IMAGE: Figure 7. A plot of roomsPerPerson in which nearly all the values are clustered between 0 and 4, but there's a verrrrry long tail reaching all the way out to 17 rooms per person]()
+![IMAGE: Figure 7. A plot of roomsPerPerson in which nearly all the values are clustered between 0 and 4, but there's a verrrrry long tail reaching all the way out to 17 rooms per person](/static/chapter2/numerical/normalization/PreClipping.png)
 
 **Figure 7.** Mainly normal, but not completely normal.
 
@@ -351,8 +351,7 @@ histogram is not an even distribution, a normal distribution, or a power law
 distribution. What if you simply *cap* or *clip* the maximum value of
 `roomsPerPerson` at an arbitrary value, say 4.0?
 
-![IMAGE: A plot of roomsPerPerson in which all values lie between 0 and
-4.0. The plot is bell-shaped, but there's an anomalous hill at 4.0]()
+![IMAGE: A plot of roomsPerPerson in which all values lie between 0 and 4.0. The plot is bell-shaped, but there's an anomalous hill at 4.0](/static/chapter2/numerical/normalization/Clipping.png)
 
 **Figure 8.** Clipping feature values at 4.0.
 
@@ -392,7 +391,7 @@ your feature distribution.
 Which technique would be most suitable for normalizing a feature with
 the following distribution?
 
-![IMAGE: A histogram showing a cluster of data with values in the range 0 to 200,000. The number of data points gradually increases for the range from 0 to 100,000 and then gradually decreases from 100,000 to 200,000.]()
+![IMAGE: A histogram showing a cluster of data with values in the range 0 to 200,000. The number of data points gradually increases for the range from 0 to 100,000 and then gradually decreases from 100,000 to 200,000.](/static/chapter2/numerical/normalization/representing_numerical_data_test_your_knowledge_normalization.png)
 
 Z-score scaling
 
